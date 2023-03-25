@@ -30,7 +30,6 @@ import footer from "./footer.svg";
 import angel from "./angel.svg";
 import hypo from "./hypo.svg";
 import eufo from "./eufo.svg";
-import society from "./society.svg";
 import gal1 from "./gal1.svg";
 import gal2 from "./gal2.svg";
 import gal3 from "./gal3.svg";
@@ -40,6 +39,7 @@ import gal6 from "./gal6.svg";
 import gal7 from "./gal7.svg";
 import gal8 from "./gal8.svg";
 import gal9 from "./gal9.svg";
+import society from "./society.svg";
 
 export {
   gal1,
