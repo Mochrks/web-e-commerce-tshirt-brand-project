@@ -39,8 +39,6 @@ import gal6 from "./gal6.svg";
 import gal7 from "./gal7.svg";
 import gal8 from "./gal8.svg";
 import gal9 from "./gal9.svg";
-import society from "./society.svg";
-
 export {
   gal1,
   gal2,
@@ -82,5 +80,4 @@ export {
   see,
   footer,
   eufo,
-  society,
 };

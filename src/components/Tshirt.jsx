@@ -12,7 +12,6 @@ import {
   dot,
   hypo,
   angel,
-  society,
   eufo,
 } from "../assets";
 import { motion } from "framer-motion";
@@ -86,8 +85,8 @@ const Tshirt = () => (
           </div>
           <div className="w-full md:mt-10 mt-6 sm:mx-3 mx-1">
             <img
-              src={society}
-              alt="society"
+              src={angel}
+              alt="angel"
               className="w-[90%] h-[100%] relative z-[5] cursor-pointer"
             />
           </div>

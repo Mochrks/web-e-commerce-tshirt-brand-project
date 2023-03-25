@@ -1,6 +1,6 @@
 import styles from "../style";
 import { layout } from "../style";
-import { model, hypo, society, angel, eufo } from "../assets";
+import { model, hypo, angel, eufo } from "../assets";
 import Button from "./Button";
 import { motion } from "framer-motion";
 import {
@@ -59,7 +59,7 @@ const Women = () => (
           </div>
           <div className="w-full md:mt-10 mt-6 sm:mx-3 mx-1">
             <img
-              src={society}
+              src={angel}
               alt="selena"
               className="w-[90%] h-[100%] relative z-[5] cursor-pointer"
             />
