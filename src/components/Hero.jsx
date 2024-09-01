@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import styles from "../style";
+import styles from "../styles/style";
 import { bajublr, b, s, d, baju, color } from "../assets";
 import {
   textVariant,
@@ -13,7 +13,6 @@ import BtnCart from "./btnCart";
 
 const Hero = () => {
   return (
-    // heroo awal
     <section
       id="home"
       className={`flex md:flex-row flex-col sm:py-16 py-10 relative `}
@@ -35,10 +34,10 @@ const Hero = () => {
           </h1>
         </motion.div>
 
-        {/* deskripsi */}
+        {/* description */}
         <motion.p
           variants={textVariant(1.1)}
-          className={`${styles.paragraph} max-w-[410px] mt-1 ss:px-1 z-[999] text-justify text-center mx-5 z-[10]`}
+          className={`${styles.paragraph} max-w-[410px] mt-1 ss:px-1 z-[5] text-justify  mx-5 `}
         >
           Choose a tshirt that matches your personal style and complements your
           wardrobe
@@ -52,7 +51,7 @@ const Hero = () => {
           className="ss:w-[30%] w-[40%] mx-6 relative z-[5]"
         ></motion.img>
 
-        {/* harga */}
+        {/* price */}
         <motion.h1
           variants={textVariant(1.1)}
           className="flex flex-row-reverse font-poppins font-semibold ss:text-[22px] text-[22px] ss:px-5 px-5 text-white ss:leading-[80px] leading-[55px]  "
@@ -68,7 +67,7 @@ const Hero = () => {
           Dark Soul
         </motion.h1>
 
-        {/* deskripsi */}
+        {/* description */}
         <motion.p
           variants={textVariant(1.2)}
           className={`${styles.paragraph} max-w-[610px] mt-5 ss:px-1 z-[999]  text-start mx-5`}
@@ -102,40 +101,26 @@ const Hero = () => {
           className="w-[200%] h-[100%]  z-[5] justify-start "
         ></motion.img>
 
-        {/* gambar content tengah */}
-
         {/* gradient start */}
 
-        {/* white ditengah */}
+        {/* white center */}
         <div className="absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40" />
         {/* cyan */}
-
         <div className="absolute z-[0] w-[120%] h-[120%] -right-[94%] mt-[80%] rounded-full   gradient-02 " />
         {/* blue */}
         <div className="absolute z-[] w-[160%] h-[100%] -left-[150%] -mt-[150%] rounded-full   gradient-07 " />
 
         {/* gradient end */}
 
-        {/* bulat 1 */}
+        {/* circle 1 */}
         <div className=" absolute z-[1] border border-gray-300 w-[80%] h-[68%] rounded-full object-contain -mt-[17%] -left-[40%]  opacity-5" />
 
-        {/* bulat 2 */}
+        {/* circle 2 */}
         <div className=" absolute z-[1] border border-gray-300 w-[115%] h-[100%] rounded-full object-contain -mt-[15%] -left-[58%]  opacity-5" />
 
-        {/* bulat 3 */}
+        {/* circle 3 */}
         <div className=" absolute z-[1] border border-gray-300 w-[170%] h-[152%] rounded-full object-contain -mt-[15%] -left-[88%]  opacity-5" />
       </motion.div>
-
-      {/* section baju blur */}
-      {/* <div
-        className={`flex-1 ${styles.flexCenter} flex-col md:my-0 my-10 relative`}
-      >
-        <img
-          src={bajublr}
-          alt="bajublr"
-          className="w-[100%] h-[100%] relative z-[5]"
-        ></img>
-      </div> */}
     </section>
   );
 };

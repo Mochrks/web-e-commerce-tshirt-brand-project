@@ -1,5 +1,5 @@
-import styles from "../style";
-import { layout } from "../style";
+import styles from "../styles/style";
+import { layout } from "../styles/style";
 import {
   throne,
   selena,
@@ -13,6 +13,7 @@ import {
   hypo,
   angel,
   eufo,
+  t1,
 } from "../assets";
 import { motion } from "framer-motion";
 import {
@@ -24,8 +25,11 @@ import {
 } from "../utils/motion.js";
 
 const Tshirt = () => (
-  <section
+  <motion.section
     id="tshirt"
+    variants={fadeIn("up", "tween", 0.2, 1.5)}
+    initial="hidden"
+    whileInView="show"
     className={`${styles.flexCenter} ${styles.marginY} ${styles.padding} sm:flex-row flex-col bg-white-gradient rounded-[20px] box-shadow `}
   >
     <div className="flex flex-col">
@@ -85,8 +89,8 @@ const Tshirt = () => (
           </div>
           <div className="w-full md:mt-10 mt-6 sm:mx-3 mx-1">
             <img
-              src={angel}
-              alt="angel"
+              src={t1}
+              alt="t1"
               className="w-[90%] h-[100%] relative z-[5] cursor-pointer"
             />
           </div>
@@ -98,7 +102,7 @@ const Tshirt = () => (
             />
           </div>
         </div>
-        {/* arrow button kanan kiri */}
+        {/* arrow button left and right */}
         <div className="flex flex-row my-5 mx-5 justify-between">
           <img
             src={arrowleft}
@@ -114,7 +118,7 @@ const Tshirt = () => (
         </div>
       </div>
     </div>
-  </section>
+  </motion.section>
 );
 
 export default Tshirt;

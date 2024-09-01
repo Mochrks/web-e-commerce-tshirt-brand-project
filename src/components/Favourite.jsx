@@ -1,5 +1,5 @@
 import { fav1, fav2, fav3 } from "../assets";
-import styles, { layout } from "../style";
+import styles, { layout } from "../styles/style";
 import {
   textVariant,
   slideIn,

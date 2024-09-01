@@ -9,7 +9,7 @@ import {
   gal8,
   gal9,
 } from "../assets";
-import styles, { layout } from "../style";
+import styles, { layout } from "../styles/style";
 import {
   textVariant,
   slideIn,

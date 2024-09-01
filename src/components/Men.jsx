@@ -1,5 +1,5 @@
-import styles from "../style";
-import { layout } from "../style";
+import styles from "../styles/style";
+import { layout } from "../styles/style";
 import { throne, selena, tv, sv, model } from "../assets";
 import { motion } from "framer-motion";
 import Button from "./Button";
@@ -24,7 +24,7 @@ const Men = () => (
       className={`${layout.sectionImg} flex-col`}
     >
       <motion.h2
-        variants={fadeIn("down", "tween", 0.2, 1.5)}
+        variants={fadeIn("left", "tween", 0.2, 1.5)}
         className={`${styles.heading2} sm:text-end text-center pt-2`}
       >
         Men Product.
@@ -89,10 +89,6 @@ const Men = () => (
       >
         <Button />
       </motion.div>
-
-      {/* <div className="absolute z-[1] sm:-left-[45%] -left-[300%] -bottom-[93px] z-0">
-        <img src={model} alt="" className="w-[500px] " />
-      </div> */}
     </motion.div>
   </section>
 );

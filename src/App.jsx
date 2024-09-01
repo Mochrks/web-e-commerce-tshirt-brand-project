@@ -1,4 +1,4 @@
-import styles from "./style";
+import styles from "./styles/style";
 import {
   Navbar,
   Hero,
@@ -27,7 +27,6 @@ const App = () => (
     <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
         <Tshirt />
-
         <Favourite />
       </div>
     </div>

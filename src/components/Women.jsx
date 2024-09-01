@@ -1,6 +1,6 @@
-import styles from "../style";
-import { layout } from "../style";
-import { model, hypo, angel, eufo } from "../assets";
+import styles from "../styles/style";
+import { layout } from "../styles/style";
+import { model, hypo, angel, eufo, t1 } from "../assets";
 import Button from "./Button";
 import { motion } from "framer-motion";
 import {
@@ -14,7 +14,7 @@ import {
 const Women = () => (
   <section
     id="women"
-    className={`${styles.flexCenter} ${styles.marginY} ${styles.padding} sm:flex-row flex-col  rounded-[20px]  `}
+    className={`${styles.flexCenter} ${styles.marginY} ${styles.padding} sm:flex-row flex-col rounded-[20px] `}
   >
     <motion.div
       variants={staggerContainer}
@@ -24,7 +24,7 @@ const Women = () => (
       className={`${layout.sectionImg} flex-col`}
     >
       <motion.h2
-        variants={fadeIn("down", "tween", 0.2, 1.5)}
+        variants={fadeIn("right", "tween", 0.2, 1.5)}
         className={`${styles.heading2} sm:text-start text-center pt-2`}
       >
         Women Product.
@@ -66,7 +66,7 @@ const Women = () => (
           </div>
           <div className="w-full md:mt-10 mt-6 sm:mx-3 mx-1">
             <img
-              src={angel}
+              src={t1}
               alt="nft"
               className="w-[90%] h-[100%] relative z-[5] cursor-pointer"
             />
@@ -93,9 +93,14 @@ const Women = () => (
         <Button />
       </motion.div>
 
-      {/* <div className="absolute z-[1] sm:-left-[45%] -left-[300%] -bottom-[93px] z-0">
-        <img src={model} alt="" className="w-[500px] " />
-      </div> */}
+      <motion.div
+        variants={fadeIn("right", "tween", 0.2, 1.5)}
+        initial="hidden"
+        whileInView="show"
+        className="absolute z-[10] sm:-left-[45%] -left-[300%] -bottom-[93px] "
+      >
+        <img src={model} alt="" className="w-[50%] " />
+      </motion.div>
     </motion.div>
   </section>
 );
