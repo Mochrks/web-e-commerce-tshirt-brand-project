@@ -1,11 +1,9 @@
 import styles from "../styles/style";
-import { layout } from "../styles/style";
 import {
   throne,
   selena,
   tv,
   sv,
-  model,
   menu,
   arrowleft,
   arrowright,
@@ -16,13 +14,7 @@ import {
   t1,
 } from "../assets";
 import { motion } from "framer-motion";
-import {
-  textVariant,
-  slideIn,
-  fadeIn,
-  textVariant2,
-  staggerContainer,
-} from "../utils/motion.js";
+import { fadeIn } from "../utils/motion.js";
 
 const Tshirt = () => (
   <motion.section

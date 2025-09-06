@@ -10,13 +10,7 @@ import {
   gal9,
 } from "../assets";
 import styles, { layout } from "../styles/style";
-import {
-  textVariant,
-  slideIn,
-  fadeIn,
-  textVariant2,
-  staggerContainer,
-} from "../utils/motion.js";
+import { fadeIn, staggerContainer } from "../utils/motion.js";
 import { motion } from "framer-motion";
 
 const Favourite = () => (

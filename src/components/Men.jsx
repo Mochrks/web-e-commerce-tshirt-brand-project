@@ -1,15 +1,9 @@
 import styles from "../styles/style";
 import { layout } from "../styles/style";
-import { throne, selena, tv, sv, model } from "../assets";
+import { throne, selena, tv, sv } from "../assets";
 import { motion } from "framer-motion";
 import Button from "./Button";
-import {
-  textVariant,
-  slideIn,
-  fadeIn,
-  textVariant2,
-  staggerContainer,
-} from "../utils/motion.js";
+import { fadeIn, staggerContainer } from "../utils/motion.js";
 
 const Men = () => (
   <section

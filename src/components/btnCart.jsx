@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { btnCart } from "../assets";
 
 const BtnCart = ({ styles }) => (
@@ -8,4 +9,7 @@ const BtnCart = ({ styles }) => (
   />
 );
 
+BtnCart.prototype = {
+  styles: PropTypes.string,
+};
 export default BtnCart;

@@ -1,13 +1,7 @@
 import { motion } from "framer-motion";
 import styles from "../styles/style";
-import { bajublr, b, s, d, baju, color } from "../assets";
-import {
-  textVariant,
-  slideIn,
-  fadeIn,
-  textVariant2,
-  staggerContainer,
-} from "../utils/motion.js";
+import { baju, color } from "../assets";
+import { textVariant, fadeIn, staggerContainer } from "../utils/motion.js";
 
 import BtnCart from "./btnCart";
 

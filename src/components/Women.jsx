@@ -1,15 +1,8 @@
-import styles from "../styles/style";
-import { layout } from "../styles/style";
+import { layout, styles } from "../styles/style";
 import { model, hypo, angel, eufo, t1 } from "../assets";
 import Button from "./Button";
 import { motion } from "framer-motion";
-import {
-  textVariant,
-  slideIn,
-  fadeIn,
-  textVariant2,
-  staggerContainer,
-} from "../utils/motion.js";
+import { fadeIn, staggerContainer } from "../utils/motion.js";
 
 const Women = () => (
   <section
